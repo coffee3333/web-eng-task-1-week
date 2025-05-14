@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb-base",
+  "ignorePatterns": [
+    "dist/",        // Ignores the `dist` directory
+    "*.test.js",    // Ignores all test files
+    "node_modules/" // Ignores `node_modules` (this is default)
+  ],
+  "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "always",
+        "jsx": "never"
+      }
+    ],
+    
+    "no-console": "off",   // Example rule override: allows console statements
+    "comma-dangle": "off"  // Example rule override: disables dangling commas
+  }
+}
